@@ -1,0 +1,23 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.9;
+
+contract Etherconversion {
+    uint public etherr;
+
+    function setEther(uint _ether) public {
+        etherr = _ether;
+    }
+    function getwie() public view returns(uint) {
+        return etherr * 1 wei;
+    }
+    function getether() public view returns(uint) {
+        return etherr * 1 ether;
+    }
+    function getgwie() public view returns(uint) {
+        return etherr * 1 gwei;
+    }
+    function getthevalues() public view returns(uint) {
+        return etherr;
+    }
+
+ }
